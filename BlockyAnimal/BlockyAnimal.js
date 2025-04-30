@@ -476,7 +476,7 @@ function drawPikachu() {
     let backlegAngle = g_rightlegAngle;
     let frontfootAngle = g_leftfootAngle;
     let backfootAngle = g_rightfootAngle;
-    let earAngle = g_rightarmAngle;
+    let earAngle = g_rightarmAngle*2 - g_leftarmAngle;
 
     // Pass to shader
     gl.uniformMatrix4fv(u_GlobalRotateMatrix, false, globalRotationMatrix.elements);
